@@ -36,7 +36,7 @@ export const DocumentPrintModal: React.FC<DocumentPrintModalProps> = ({ document
         <div className="p-4 bg-slate-900 text-white flex items-center justify-between print:hidden">
           <div className="flex items-center gap-2 font-bold text-sm">
             <Building2 className="w-4 h-4 text-brand-400" />
-            <span>AD CARE Document Viewer — {getDocTitle()}</span>
+            <span>AD Care RxBooks Document Viewer — {getDocTitle()}</span>
           </div>
           <div className="flex items-center gap-2">
             <button
@@ -182,10 +182,10 @@ export const DocumentPrintModal: React.FC<DocumentPrintModalProps> = ({ document
             <div className="text-right flex flex-col items-end justify-between">
               <div className="flex items-center gap-1.5 text-slate-400 font-semibold">
                 <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Verified by AD CARE Cloud Ledger</span>
+                <span>Verified by AD Care RxBooks Cloud Ledger</span>
               </div>
               <div className="text-[10px] text-slate-400">
-                Generated with AD CARE Business Accounting Platform
+                Generated with AD Care RxBooks Business Accounting Platform
               </div>
             </div>
           </div>

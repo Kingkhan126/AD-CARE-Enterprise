@@ -6,13 +6,13 @@ import {
 } from './types';
 
 export const INITIAL_ORG_SETTINGS: OrganizationSettings = {
-  name: 'AD CARE Enterprise',
-  legalName: 'AD CARE Financial Technologies Inc.',
+  name: 'AD Care RxBooks Enterprise',
+  legalName: 'AD Care RxBooks Financial Technologies Inc.',
   tagline: 'Production Cloud Accounting & Financial Operations',
   taxId: 'US-984712093-TX',
-  email: 'finance@adcare.io',
+  email: 'finance@adcarerxbooks.com',
   phone: '+1 (800) 555-ADCARE',
-  website: 'https://adcare.io',
+  website: 'https://adcarerxbooks.com',
   currency: 'USD',
   fiscalYearStart: 'January',
   address: '100 Financial Center Blvd, Suite 400',
@@ -101,7 +101,7 @@ export const INITIAL_CONTACTS: Contact[] = [
 export const INITIAL_ITEMS: Item[] = [
   {
     id: 'i1',
-    name: 'AD CARE Enterprise Cloud Platform License',
+    name: 'AD Care RxBooks Enterprise Cloud Platform License',
     sku: 'ADC-SaaS-ENT',
     type: 'service',
     unit: 'seat/month',
@@ -129,7 +129,7 @@ export const INITIAL_ITEMS: Item[] = [
   },
   {
     id: 'i3',
-    name: 'AD CARE Smart Edge IoT Gateway Device',
+    name: 'AD Care RxBooks Smart Edge IoT Gateway Device',
     sku: 'ADC-HW-GW01',
     type: 'product',
     unit: 'unit',

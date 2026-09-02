@@ -85,12 +85,12 @@ export const Sidebar: React.FC = () => {
       {/* Brand Header */}
       <div className="p-4 border-b border-slate-800/80 flex items-center justify-between">
         <Link href="/dashboard" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 via-blue-500 to-indigo-400 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-500/20 ring-1 ring-white/20 group-hover:scale-105 transition-transform">
-            AD
+          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 via-blue-500 to-indigo-400 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-brand-500/20 ring-1 ring-white/20 group-hover:scale-105 transition-transform">
+            Rx
           </div>
           <div>
-            <div className="font-extrabold text-lg text-white tracking-wide flex items-center gap-1.5 font-sans">
-              AD CARE
+            <div className="font-extrabold text-base text-white tracking-wide flex items-center gap-1.5 font-sans">
+              AD Care RxBooks
             </div>
             <div className="text-[10px] text-slate-400 font-medium tracking-wider uppercase">
               Cloud Financial SaaS
@@ -116,7 +116,7 @@ export const Sidebar: React.FC = () => {
         >
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-cyan-200 animate-spin-slow" />
-            <span>AD CARE AI</span>
+            <span>RxBooks AI</span>
           </div>
           <ChevronRight className="w-3.5 h-3.5 text-white/70 group-hover:translate-x-0.5 transition-transform" />
         </button>

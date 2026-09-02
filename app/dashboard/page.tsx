@@ -51,7 +51,7 @@ export default function DashboardPage() {
             Welcome to {orgSettings.name}
           </h2>
           <p className="text-xs text-slate-300 mt-1 max-w-xl">
-            AD CARE is active. You have <span className="font-semibold text-white">${totalBankBalance.toLocaleString()}</span> in total cash liquidity across connected banking accounts.
+            AD Care RxBooks is active. You have <span className="font-semibold text-white">${totalBankBalance.toLocaleString()}</span> in total cash liquidity across connected banking accounts.
           </p>
         </div>
 
@@ -61,7 +61,7 @@ export default function DashboardPage() {
             className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-brand-500 to-indigo-500 hover:from-brand-600 hover:to-indigo-600 text-white rounded-xl text-xs font-bold shadow-lg shadow-brand-500/20 transition-all border border-white/10"
           >
             <Sparkles className="w-4 h-4 text-cyan-200" />
-            <span>Launch AD CARE AI</span>
+            <span>Launch RxBooks AI</span>
           </button>
           <Link
             href="/invoices/new"

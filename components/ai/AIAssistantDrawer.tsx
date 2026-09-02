@@ -35,7 +35,7 @@ export const AIAssistantDrawer: React.FC = () => {
             </div>
             <div>
               <h2 className="font-bold text-sm text-white flex items-center gap-2">
-                AD CARE AI Assistant
+                AD Care RxBooks AI Assistant
                 <span className="px-1.5 py-0.5 rounded text-[9px] bg-emerald-500/20 text-emerald-300 font-medium border border-emerald-500/30">Live Sync</span>
               </h2>
               <p className="text-[11px] text-slate-300">Financial Ledger Co-Pilot</p>
@@ -107,7 +107,7 @@ export const AIAssistantDrawer: React.FC = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask AD CARE AI about revenue, expenses, or invoices..."
+            placeholder="Ask AD Care RxBooks AI about revenue, expenses, or invoices..."
             className="flex-1 px-3 py-2 text-xs border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-900 bg-slate-50 focus:bg-white"
           />
           <button

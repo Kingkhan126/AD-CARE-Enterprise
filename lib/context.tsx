@@ -138,7 +138,7 @@ export const ADCareProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     {
       id: 'm-init',
       role: 'assistant',
-      text: "Hello! I'm **AD CARE AI**, your intelligent financial co-pilot. I am synced directly with your ledger, invoices, bank feeds, and expenses. Ask me anything about your current net profit, cash flow, overdue balances, or natural language reporting!",
+      text: "Hello! I'm **AD Care RxBooks AI**, your intelligent financial co-pilot. I am synced directly with your ledger, invoices, bank feeds, and expenses. Ask me anything about your current net profit, cash flow, overdue balances, or natural language reporting!",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -422,30 +422,30 @@ export const ADCareProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       const lower = userText.toLowerCase();
 
       if (lower.includes('profit') || lower.includes('income') || lower.includes('revenue')) {
-        replyText = `Based on current financial records in **AD CARE**:\n\n` +
+        replyText = `Based on current financial records in **AD Care RxBooks**:\n\n` +
           `- **Total Revenue**: $${totalRevenue.toLocaleString(undefined, { minimumFractionDigits: 2 })}\n` +
           `- **Total Operating Expenses & Bills**: $${totalExpenses.toLocaleString(undefined, { minimumFractionDigits: 2 })}\n` +
           `- **Net Operating Income**: **$${netProfit.toLocaleString(undefined, { minimumFractionDigits: 2 })}**\n\n` +
-          `Your highest revenue generating item is the *AD CARE Enterprise Cloud Platform License*.`;
+          `Your highest revenue generating item is the *AD Care RxBooks Enterprise Cloud Platform License*.`;
       } else if (lower.includes('overdue') || lower.includes('unpaid') || lower.includes('invoice')) {
         const overdueInvs = invoices.filter(i => i.status === 'overdue');
         if (overdueInvs.length > 0) {
           replyText = `You currently have **${overdueInvs.length} overdue invoice(s)** requiring action:\n\n` +
             overdueInvs.map(i => `• **${i.invoiceNumber}** — ${i.customerName} (Due: ${i.dueDate}) — Balance: **$${i.balanceDue.toLocaleString()}**`).join('\n') +
-            `\n\nI recommend sending an automated payment reminder using AD CARE Automation.`;
+            `\n\nI recommend sending an automated payment reminder using AD Care RxBooks Automation.`;
         } else {
-          replyText = `Great news! You currently have no overdue invoices in AD CARE.`;
+          replyText = `Great news! You currently have no overdue invoices in AD Care RxBooks.`;
         }
       } else if (lower.includes('bank') || lower.includes('cash') || lower.includes('balance')) {
-        replyText = `Here is your current liquidity breakdown across all connected **AD CARE** banking accounts:\n\n` +
+        replyText = `Here is your current liquidity breakdown across all connected **AD Care RxBooks** banking accounts:\n\n` +
           bankAccounts.map(b => `• **${b.accountName}**: **$${b.balance.toLocaleString()}** (${b.status})`).join('\n') +
           `\n\n**Total Cash Liquidity**: **$${totalBankBalance.toLocaleString(undefined, { minimumFractionDigits: 2 })}**`;
       } else if (lower.includes('expense') || lower.includes('spending')) {
-        replyText = `Summary of recent logged expenses in **AD CARE**:\n\n` +
+        replyText = `Summary of recent logged expenses in **AD Care RxBooks**:\n\n` +
           expenses.map(e => `• **${e.expenseNumber}** (${e.category}): $${e.amount.toLocaleString()} — *${e.description}*`).join('\n') +
           `\n\nTotal Direct Logged Expenses: **$${expenses.reduce((a, b) => a + b.amount, 0).toLocaleString()}**`;
       } else {
-        replyText = `I have analyzed your **AD CARE** financial database. Current Snapshot:\n\n` +
+        replyText = `I have analyzed your **AD Care RxBooks** financial database. Current Snapshot:\n\n` +
           `• **Net Profit**: $${netProfit.toLocaleString()}\n` +
           `• **Accounts Receivable**: $${totalReceivables.toLocaleString()}\n` +
           `• **Accounts Payable**: $${totalPayables.toLocaleString()}\n` +
