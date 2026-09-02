@@ -60,12 +60,20 @@ export const DocumentPrintModal: React.FC<DocumentPrintModalProps> = ({ document
           {/* Document Header */}
           <div className="flex items-start justify-between border-b border-slate-200 pb-6 mb-6">
             <div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-lg bg-slate-900 text-white font-extrabold flex items-center justify-center text-base">
-                  AD
-                </div>
-                <div className="font-extrabold text-2xl tracking-tight text-slate-900">
-                  {orgSettings.name}
+              <div className="flex items-center gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.jpg"
+                  alt="AD CARE Meds & Pharmacy Logo"
+                  className="w-12 h-12 object-contain rounded-lg border border-slate-200"
+                />
+                <div>
+                  <div className="font-black text-2xl tracking-tight font-sans">
+                    <span className="text-[#3b558c]">AD </span>
+                    <span className="text-[#61b849]">CARE </span>
+                    <span className="text-[#3b558c]">RxBooks</span>
+                  </div>
+                  <div className="text-[11px] text-slate-500 font-medium">Meds & Pharmacy Platform</div>
                 </div>
               </div>
               <div className="text-xs text-slate-500 mt-2 space-y-0.5">

@@ -22,6 +22,8 @@ interface NavGroup {
   items: NavItem[];
 }
 
+import { BrandLogo } from '@/components/ui/BrandLogo';
+
 export const Sidebar: React.FC = () => {
   const pathname = usePathname();
   const { orgSettings, setIsAIOpen, overdueInvoicesCount, pendingBillsCount } = useADCare();
@@ -84,18 +86,8 @@ export const Sidebar: React.FC = () => {
     <aside className="w-64 bg-slate-900 text-slate-300 flex flex-col h-screen fixed left-0 top-0 z-30 border-r border-slate-800 shadow-xl select-none">
       {/* Brand Header */}
       <div className="p-4 border-b border-slate-800/80 flex items-center justify-between">
-        <Link href="/dashboard" className="flex items-center gap-3 group">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 via-blue-500 to-indigo-400 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-brand-500/20 ring-1 ring-white/20 group-hover:scale-105 transition-transform">
-            Rx
-          </div>
-          <div>
-            <div className="font-extrabold text-base text-white tracking-wide flex items-center gap-1.5 font-sans">
-              AD Care RxBooks
-            </div>
-            <div className="text-[10px] text-slate-400 font-medium tracking-wider uppercase">
-              Cloud Financial SaaS
-            </div>
-          </div>
+        <Link href="/dashboard" className="group">
+          <BrandLogo size="md" lightText={true} />
         </Link>
       </div>
 
